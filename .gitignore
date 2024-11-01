@@ -15,8 +15,6 @@ downloads/
 eggs/
 .eggs/
 lib/
-Scripts/
-include/
 lib64/
 parts/
 sdist/
@@ -164,4 +162,12 @@ cython_debug/
 #.idea/
 
 #Personalizar
+
+#folder
+Scripts/
+include/
+etc/
+share/
+
+#files
 *.cfg

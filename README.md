@@ -1,2 +1,5 @@
-# vehicules_EDA
-Exploracion de conjunto de datos ( anuncios de coches )
+# vehicles_EDA
+Exploring dataset (car ads)
+
+Objective
+To study data collected and determine  factors that influence vehicles price.

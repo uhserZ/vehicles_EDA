@@ -46,3 +46,19 @@ if hist_check:
   except Exception as e:
     st.error(e)
 
+# scatter plot - x=model_year y=price
+st.markdown("Let's build a scatter plot that show the relation between price and model") 
+st.code('''#scatterplt - x=model_year y=price
+fig = px.scatter(car_data, x='model_year', y='price')''')
+
+# checkbox to show scatter plot
+scatter_check = st.checkbox('Show scatter plot')
+if scatter_check:
+  try:
+    st.write(
+      'Price and model year')
+    fig = px.scatter(car_data, x='model_year', y='price')
+    # show interactive ploty chart
+    st.plotly_chart(fig, use_container_width=True)
+  except Exception as e:
+    st.error(e)

@@ -10,7 +10,6 @@ try:
 except FileNotFoundError:
     st.error(" Data could not be loaded, file not found", icon='🟡')
     time.sleep(.2)
-st.code(car_data.info())
 
 st.title("Vehicles Ads") 
 st.markdown("////////////////////////////////////")

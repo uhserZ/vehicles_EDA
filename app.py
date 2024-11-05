@@ -28,3 +28,21 @@ tab2.subheader("statistics")
 tab2.write(car_data.describe())
 
 
+# hist - x=odometer y=price
+st.markdown("Let's plot the relacion between the odometer and the price, and see how influence in the price") 
+st.code('''#histogram - x=odometer y=price
+fig = px.histogram(car_data, x='odometer', y='price')''')
+
+# checkbox to show histogram
+hist_check = st.checkbox('Show histogram')
+
+if hist_check:
+  try:
+    st.write(
+      'mileage and price')
+    fig = px.histogram(car_data, x='price')
+    # show interactive ploty chart
+    st.plotly_chart(fig, use_container_width=True)
+  except Exception as e:
+    st.error(e)
+

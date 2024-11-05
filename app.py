@@ -12,7 +12,7 @@ except FileNotFoundError:
     time.sleep(.2)
 
 st.title("Vehicles Ads") 
-st.markdown("////////////////////////////////////")
+st.markdown("---")
 st.header("EDA ( Exploratory Data Analysis )")
 st.subheader("Objetive: ")
 st.markdown("Study the collected data and determine factors that influence the price of a vehicle.") 
@@ -61,3 +61,8 @@ if scatter_check:
     st.plotly_chart(fig, use_container_width=True)
   except Exception as e:
     st.error(e)
+
+
+#link to github repository
+st.markdown("---")
+st.page_link("https://github.com/uhserZ/vehicles_EDA", label="see Github repository", icon="😊")

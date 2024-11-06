@@ -65,4 +65,5 @@ if scatter_check:
 
 #link to github repository
 st.markdown("---")
-st.page_link("https://github.com/uhserZ/vehicles_EDA", label="see Github repository", icon="😊")
+st.html('''<p>visit repo: <a href="https://github.com/uhserZ/vehicles_EDA" target="_blank" rel="noopener noreferrer"> <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a></p>
+        ''')
